@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="858.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AllProductFormController">
+   <children>
+
+      <TableView fx:id="tblBooks" layoutX="26.0" layoutY="237.0" opacity="0.86" prefHeight="522.0" prefWidth="1147.0">
+         <columns>
+            <TableColumn fx:id="colTitle" prefWidth="206.00003051757812" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="189.0" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="170.0" text="Genre" />
+            <TableColumn fx:id="colPublicationDate" prefWidth="163.0" text="Publication Date" />
+            <TableColumn fx:id="colIsbn" prefWidth="147.0" text="ISBN" />
+            <TableColumn fx:id="colStatus" prefWidth="153.0" text="Status" />
+            <TableColumn fx:id="colOption" prefWidth="136.0" text="Option" />
+         </columns>
+      </TableView>
+      <Label layoutX="397.0" layoutY="60.0" prefHeight="79.0" prefWidth="404.0" text="ALL PRODUCTS">
+         <font>
+            <Font name="Poppins SemiBold" size="55.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="48.0" onAction="#btnBackOnAction" prefHeight="31.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25; -fx-border-color: #000000; -fx-border-radius: 25;" text="Back">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../assets/img/back-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Poppins Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
