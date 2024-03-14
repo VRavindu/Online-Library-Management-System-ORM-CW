@@ -1,14 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.controller.LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="736.0" prefWidth="1020.0" stylesheets="@../assets/css/LoginForm.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormContoller">
+   <children>
+      <ImageView fitHeight="736.0" fitWidth="420.47" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/left-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="736.0" fitWidth="420.47" layoutX="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/right-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="655.0" fitWidth="420.0" layoutX="306.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/rec-bg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="389.0" layoutY="383.0" onMouseClicked="#txtForgotPwOnMouseClicked" text="Forgot Password ?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="313.0" text="Password :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="209.0" text="User Name :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="40.0" prefHeight="71.0" prefWidth="163.0" text="Log In.">
+         <font>
+            <Font name="Poppins Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="568.0" onMouseClicked="#txtSignUpOnMouseClicked" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="461.0" layoutY="466.0" onAction="#btnLoginOnAction" prefHeight="52.0" prefWidth="108.0" styleClass="login-btn" text="Login">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" layoutX="378.0" layoutY="338.0" onAction="#txtPasswordOnAction" prefHeight="43.0" prefWidth="275.0" styleClass="login-txt-field" />
+      <TextField fx:id="txtUserName" layoutX="378.0" layoutY="234.0" onAction="#txtUsernameOnAction" prefHeight="43.0" prefWidth="275.0" styleClass="login-txt-field" />
+      <ImageView fitHeight="273.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/flying-books.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="229.0" layoutX="804.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/book-flying.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="475.0" fitWidth="440.0" layoutX="-6.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/goals-on-book.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="424.0" fitWidth="439.0" layoutX="596.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/boy-reading.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="427.0" layoutY="546.0" text="Didn’t have an Account ?">
+         <font>
+            <Font name="Nautica Rounded Regular" size="17.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

@@ -1,0 +1,21 @@
+.login-btn {
+    -fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 50%, center 40% 40%, radius 50%, #96d3ff, #0075ff);
+    -fx-background-radius: 30px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+.login-btn:hover {
+    -fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 50%, center 40% 40%, radius 50%, #ff9696, #ff4141);
+    -fx-background-radius: 30px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.login-txt-field {
+    -fx-background-color:  #B6E9FF;
+    -fx-border-color: #808080;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1020.0" stylesheets="@../assets/css/LoginForm.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SignUpFormController">
+   <children>
+      <ImageView fitHeight="736.0" fitWidth="420.47" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/left-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="736.0" fitWidth="420.47" layoutX="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/right-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="664.0" fitWidth="687.0" layoutX="177.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/rec-bg-2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="418.0" layoutY="56.0" text="Sign Up.">
+         <font>
+            <Font name="Poppins Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="603.0" text="Already have an Account ?">
+         <font>
+            <Font name="Nautica Rounded Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="263.0" text="Password :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="567.0" layoutY="178.0" text="User Name :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="629.0" onMouseClicked="#txtLoginMouseClicked" text="Login">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="453.0" layoutY="524.0" onAction="#btnSignUpOnAction" styleClass="login-btn" text="Sign Up">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="txtPassword" layoutX="565.0" layoutY="288.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <TextField fx:id="txtUserName" layoutX="565.0" layoutY="203.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <Label layoutX="571.0" layoutY="347.0" text="Confirm Password :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtConfirmPassword" layoutX="567.0" layoutY="372.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <Label layoutX="568.0" layoutY="433.0" text="Email Address :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="566.0" layoutY="458.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <ImageView fitHeight="336.0" fitWidth="336.0" layoutX="687.0" layoutY="387.0">
+         <image>
+            <Image url="@../assets/img/books-3d-globe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="175.0" fitWidth="263.0" layoutX="771.0">
+         <image>
+            <Image url="@../assets/img/fallin-books.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="413.0" fitWidth="283.0" layoutX="-1.0" layoutY="323.0">
+         <image>
+            <Image url="@../assets/img/meadows-flying-books.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="263.0" text="Last Name :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="178.0" text="First Name :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFName" layoutX="242.0" layoutY="203.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <Label layoutX="248.0" layoutY="347.0" text="Address :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="433.0" text="Age :">
+         <font>
+            <Font name="Nautica Rounded Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAge" layoutX="243.0" layoutY="458.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <TextField fx:id="txtLName" layoutX="243.0" layoutY="288.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <TextField fx:id="txtAddress" layoutX="244.0" layoutY="372.0" prefHeight="41.0" prefWidth="265.0" style="-fx-background-color: #B6E9FF; -fx-border-color: #808080; -fx-border-radius: 10; -fx-background-radius: 10;" />
+   </children>
+</AnchorPane>
