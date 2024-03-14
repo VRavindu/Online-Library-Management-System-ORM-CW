@@ -1,0 +1,43 @@
+.add-btn {
+    -fx-background-color: #24ff24;
+    -fx-background-radius: 35px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+.update-btn {
+    -fx-background-color: #f8ff26;
+    -fx-background-radius: 35px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+.delete-btn {
+    -fx-background-color: #ff004b;
+    -fx-background-radius: 35px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+.add-btn:hover {
+    -fx-background-color: #24ff24;
+    -fx-background-radius: 35px;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-border-color: black;
+    -fx-border-radius: 35px;
+}
+.update-btn:hover {
+    -fx-background-color: #f8ff26;
+    -fx-background-radius: 35px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-border-color: black;
+    -fx-border-radius: 35px;
+}
+.delete-btn:hover {
+    -fx-background-color: #ff004b;
+    -fx-background-radius: 35px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-border-color: black;
+    -fx-border-radius: 35px;
+}
