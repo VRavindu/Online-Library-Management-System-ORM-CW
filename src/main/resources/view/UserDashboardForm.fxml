@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="858.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserDashboardController">
+   <children>
+      <ImageView fitHeight="795.0" fitWidth="1203.0" layoutX="-4.0" layoutY="62.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/11.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="829.0" fitWidth="1197.0" layoutY="29.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/user-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="141.0" fitWidth="1199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/user-bg-up.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1090.0" layoutY="9.0" onAction="#btnProfileOnAction" prefHeight="56.0" prefWidth="56.0" text="Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="52.0">
+               <image>
+                  <Image url="@../assets/img/profile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <HBox alignment="CENTER" layoutX="168.0" layoutY="9.0" prefHeight="65.0" prefWidth="857.0" spacing="55.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#btnProductOnAction" text="All Products">
+               <font>
+                  <Font name="Poppins SemiBold" size="25.0" />
+               </font></JFXButton>
+            <MenuButton mnemonicParsing="false" style="-fx-background-color: #D9D9D9;" text="Shop by Type">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Picture Books" />
+                <MenuItem mnemonicParsing="false" text="Educational" />
+                  <MenuItem mnemonicParsing="false" text="Capture Books" />
+                  <MenuItem mnemonicParsing="false" text="Activity Books" />
+              </items>
+               <font>
+                  <Font name="Poppins SemiBold" size="25.0" />
+               </font>
+            </MenuButton>
+            <JFXButton buttonType="RAISED" onAction="#btnBorrowBooksOnAction" text="Borrow Books">
+               <font>
+                  <Font name="Poppins SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <GridPane layoutX="191.0" layoutY="506.0" prefHeight="201.0" prefWidth="779.0" style="-fx-background-color: #6c6c6c;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="-11.0" layoutY="5.0" prefHeight="65.0" prefWidth="80.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <GridPane layoutX="191.0" layoutY="245.0" prefHeight="201.0" prefWidth="779.0" style="-fx-background-color: #6c6c6c;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="193.0" layoutY="212.0" text="Shop by Category">
+         <font>
+            <Font name="Nautica Rounded ExtraBold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="473.0" text="Shop by Author">
+         <font>
+            <Font name="Nautica Rounded ExtraBold" size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="331.0" layoutY="104.0" prefHeight="33.0" prefWidth="548.0" style="-fx-background-radius: 25;" />
+      <JFXButton buttonType="RAISED" layoutX="817.0" layoutY="103.0" prefHeight="31.0" style="-fx-background-color: #98E0FF; -fx-background-radius: 25; -fx-border-color: #000000; -fx-border-radius: 25;" text="Search">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="18.0">
+               <image>
+                  <Image url="@../assets/img/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Poppins Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="114.0" fitWidth="128.0" layoutX="-3.0" layoutY="2.0">
+         <image>
+            <Image url="@../assets/img/logo-library.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="41.0" layoutY="781.0" onAction="#btnLogOutOnAction" text="LogOut">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/log-out.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
