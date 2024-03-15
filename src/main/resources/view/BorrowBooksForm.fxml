@@ -15,6 +15,11 @@
 
 <AnchorPane prefHeight="858.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BorrowBooksFormController">
    <children>
+      <ImageView fitHeight="858.0" fitWidth="1221.0" layoutX="-23.0" layoutY="1.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/library-racks.jpg" />
+         </image>
+      </ImageView>
       <TextField fx:id="txtSearch" layoutX="331.0" layoutY="104.0" prefHeight="33.0" prefWidth="548.0" style="-fx-background-radius: 25;" />
       <JFXButton buttonType="RAISED" layoutX="817.0" layoutY="103.0" onAction="#btnSearchOnAction" prefHeight="31.0" style="-fx-background-color: #98E0FF; -fx-background-radius: 25; -fx-border-color: #000000; -fx-border-radius: 25;" text="Search">
          <graphic>
@@ -46,7 +51,7 @@
             <Font name="Poppins Bold" size="27.0" />
          </font>
       </Label>
-      <ComboBox fx:id="cmbSearchBooks" layoutX="58.0" layoutY="237.0" onAction="#cmbSearchBooksOnAction" prefHeight="39.0" prefWidth="438.0" promptText="Search books...." />
+      <ComboBox fx:id="cmbSearchBooks" layoutX="58.0" layoutY="237.0" onAction="#cmbSearchBooksOnAction" prefHeight="39.0" prefWidth="438.0" promptText="Search books...." style="-fx-background-radius: 10;" />
       <Label fx:id="lblTitle" layoutX="63.0" layoutY="397.0" prefHeight="40.0" prefWidth="315.0">
          <font>
             <Font name="Arial Bold" size="26.0" />
@@ -132,7 +137,7 @@
             <Font name="Poppins SemiBold" size="16.0" />
          </font>
       </Label>
-      <Button layoutX="955.0" layoutY="671.0" mnemonicParsing="false" onAction="#btnBuyOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #807f7f;" text="Get Book">
+      <Button layoutX="955.0" layoutY="671.0" mnemonicParsing="false" onAction="#btnBuyOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #807f7f; -fx-background-radius: 25;" text="Get Book" textFill="#00fbff">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -150,7 +155,7 @@
             <Font name="Poppins SemiBold" size="16.0" />
          </font>
       </Label>
-      <DatePicker fx:id="returnDate" layoutX="867.0" layoutY="497.0" prefHeight="40.0" prefWidth="252.0" />
+      <DatePicker fx:id="returnDate" layoutX="867.0" layoutY="497.0" prefHeight="40.0" prefWidth="252.0" style="-fx-background-radius: 10;" />
       <Label fx:id="nameRDate" layoutX="867.0" layoutY="475.0" text="Return Date :" visible="false">
          <font>
             <Font name="Poppins SemiBold" size="16.0" />

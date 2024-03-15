@@ -78,7 +78,7 @@
                   <Font name="Poppins Medium" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="102.0" layoutY="63.0" text="25">
+            <Label fx:id="lblBookCount" layoutX="86.0" layoutY="59.0" prefHeight="55.0" prefWidth="77.0" text=" ">
                <font>
                   <Font name="Poppins Bold" size="38.0" />
                </font>
@@ -93,7 +93,7 @@
                   <Font name="Poppins Medium" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="101.0" layoutY="60.0" text="25">
+            <Label fx:id="lblUserCount" layoutX="87.0" layoutY="54.0" prefHeight="55.0" prefWidth="77.0" text=" ">
                <font>
                   <Font name="Poppins Bold" size="38.0" />
                </font>
@@ -108,7 +108,7 @@
                   <Font name="Poppins Medium" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="102.0" layoutY="60.0" text="25">
+            <Label fx:id="lblOrderCount" layoutX="87.0" layoutY="56.0" prefHeight="55.0" prefWidth="77.0" text=" ">
                <font>
                   <Font name="Poppins Bold" size="38.0" />
                </font>

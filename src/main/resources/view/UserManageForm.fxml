@@ -10,10 +10,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="750.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserManageFormController">
    <children>
-      <VBox alignment="CENTER" layoutX="224.0" layoutY="164.0" prefHeight="383.0" prefWidth="274.0" spacing="30.0">
+      <ImageView fitHeight="754.0" fitWidth="633.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/user-manage.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="215.0" layoutY="164.0" prefHeight="383.0" prefWidth="274.0" spacing="30.0">
          <children>
             <JFXComboBox fx:id="cmbUserId" onAction="#cmbUserIdOnAction" prefHeight="36.0" prefWidth="275.0" />
             <TextField fx:id="txtUserName" prefHeight="37.0" />
@@ -23,36 +27,36 @@
             <TextField fx:id="txtEmail" prefHeight="37.0" />
          </children>
       </VBox>
-      <VBox alignment="CENTER_RIGHT" layoutX="87.0" layoutY="180.0" prefHeight="355.0" prefWidth="130.0" spacing="41.0">
+      <VBox alignment="CENTER_RIGHT" layoutX="78.0" layoutY="180.0" prefHeight="355.0" prefWidth="130.0" spacing="41.0">
          <children>
             <Label text="User ID  : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="User Name : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Name : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Age : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Address : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Email : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
          </children>

@@ -15,7 +15,8 @@ public class AdminDashboardFormController {
         new Ui().setUi("BookManageForm",actionEvent);
     }
 
-    public void btnManageBranchOnAction(ActionEvent actionEvent) {
+    public void btnManageBranchOnAction(ActionEvent actionEvent) throws IOException {
+        new Ui().setUi("BranchManageForm", actionEvent);
     }
 
     public void btnManageUserOnAction(ActionEvent actionEvent) throws IOException {

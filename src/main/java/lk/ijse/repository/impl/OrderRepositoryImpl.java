@@ -1,10 +1,14 @@
 package lk.ijse.repository.impl;
 
 import lk.ijse.entity.Orders;
+import lk.ijse.entity.User;
 import lk.ijse.repository.OrderRepository;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class OrderRepositoryImpl implements OrderRepository {
@@ -49,5 +53,18 @@ public class OrderRepositoryImpl implements OrderRepository {
         org.hibernate.query.Query query = session.createQuery(hql);
         query.setParameter("value", id);
         return (Long) query.uniqueResult();
+    }
+
+    @Override
+    public List<Orders> getOrderByUserId(User user) {
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Orders> criteria = builder.createQuery(Orders.class);
+        Root<Orders> root = criteria.from(Orders.class);
+
+        criteria.select(root);
+        criteria.where(builder.equal(root.get("user"), user));
+
+        List<Orders> resultList = session.createQuery(criteria).getResultList();
+        return resultList;
     }
 }

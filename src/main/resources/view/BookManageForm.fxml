@@ -11,16 +11,21 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookManageFormController">
+<AnchorPane prefHeight="720.0" prefWidth="1020.0" style="-fx-background-color: #cbd3f5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookManageFormController">
    <children>
-      <VBox alignment="CENTER" layoutX="236.0" layoutY="206.0" prefHeight="383.0" prefWidth="274.0" spacing="30.0">
+      <ImageView fitHeight="720.0" fitWidth="1109.0" layoutX="-88.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/digital-library.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="275.0" layoutY="206.0" prefHeight="383.0" prefWidth="274.0" spacing="30.0">
          <children>
-            <TextField fx:id="txtBId" prefHeight="37.0" />
-            <TextField fx:id="txtTitle" prefHeight="37.0" />
-            <TextField fx:id="txtAuthor" prefHeight="37.0" />
-            <ComboBox fx:id="txtGenre" prefHeight="37.0" prefWidth="274.0" />
-            <TextField fx:id="txtQty" prefHeight="37.0" />
-            <DatePicker fx:id="txtDate" prefHeight="37.0" prefWidth="274.0" />
+            <TextField fx:id="txtBId" prefHeight="37.0" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtTitle" prefHeight="37.0" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtAuthor" prefHeight="37.0" style="-fx-background-radius: 5;" />
+            <ComboBox fx:id="txtGenre" prefHeight="37.0" prefWidth="274.0" style="-fx-background-radius: 5;" />
+            <TextField fx:id="txtQty" prefHeight="37.0" style="-fx-background-radius: 5;" />
+            <DatePicker fx:id="txtDate" prefHeight="37.0" prefWidth="274.0" style="-fx-background-radius: 5;" />
          </children>
       </VBox>
       <VBox alignment="CENTER" layoutX="685.0" layoutY="232.0" prefHeight="331.0" prefWidth="256.0" spacing="50.0">
@@ -63,36 +68,36 @@
             </JFXButton>
          </children>
       </VBox>
-      <VBox alignment="CENTER_RIGHT" layoutX="99.0" layoutY="222.0" prefHeight="355.0" prefWidth="130.0" spacing="41.0">
+      <VBox alignment="CENTER_RIGHT" layoutX="129.0" layoutY="222.0" prefHeight="355.0" prefWidth="139.0" spacing="41.0">
          <children>
             <Label text="Book ID (ISBN)  : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Title : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Aurthor : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Genre : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Quantity : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
             <Label text="Date : ">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
          </children>

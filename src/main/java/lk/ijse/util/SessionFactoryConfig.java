@@ -19,6 +19,7 @@ public class SessionFactoryConfig {
                 .addAnnotatedClass(Admin.class)
                 .addAnnotatedClass(Orders.class)
                 .addAnnotatedClass(OrderDetail.class)
+                .addAnnotatedClass(Branch.class)
                 .buildSessionFactory();
     }
 

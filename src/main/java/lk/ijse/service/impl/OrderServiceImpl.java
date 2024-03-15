@@ -1,5 +1,7 @@
 package lk.ijse.service.impl;
 
+import lk.ijse.dto.OrderDto;
+import lk.ijse.dto.UserDto;
 import lk.ijse.entity.Orders;
 import lk.ijse.repository.OrderRepository;
 import lk.ijse.repository.RepositoryFactory;
@@ -8,6 +10,7 @@ import lk.ijse.util.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderServiceImpl implements OrderService {
@@ -24,8 +27,6 @@ public class OrderServiceImpl implements OrderService {
         }else {
             return -1;
         }
-
-
     }
 
     @Override
@@ -50,5 +51,10 @@ public class OrderServiceImpl implements OrderService {
         session = SessionFactoryConfig.getInstance().getSession();
         orderRepository.setSession(session);
         return orderRepository.getBookCount(id);
+    }
+
+    @Override
+    public List<OrderDto> getOrderByUserId(UserDto userDto) {
+        return null;
     }
 }

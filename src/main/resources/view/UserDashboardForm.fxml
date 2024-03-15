@@ -2,8 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -16,12 +14,12 @@
 
 <AnchorPane prefHeight="858.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserDashboardController">
    <children>
-      <ImageView fitHeight="795.0" fitWidth="1203.0" layoutX="-4.0" layoutY="62.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="795.0" fitWidth="1203.0" layoutX="-4.0" layoutY="62.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/11.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="829.0" fitWidth="1197.0" layoutY="29.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="829.0" fitWidth="1199.0" layoutX="1.0" layoutY="29.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/user-bg.png" />
          </image>
@@ -49,25 +47,19 @@
                <font>
                   <Font name="Poppins SemiBold" size="25.0" />
                </font></JFXButton>
-            <MenuButton mnemonicParsing="false" style="-fx-background-color: #D9D9D9;" text="Shop by Type">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Picture Books" />
-                <MenuItem mnemonicParsing="false" text="Educational" />
-                  <MenuItem mnemonicParsing="false" text="Capture Books" />
-                  <MenuItem mnemonicParsing="false" text="Activity Books" />
-              </items>
+            <JFXButton buttonType="RAISED" onAction="#btnBorrowBooksOnAction" text="Borrow Books">
                <font>
                   <Font name="Poppins SemiBold" size="25.0" />
                </font>
-            </MenuButton>
-            <JFXButton buttonType="RAISED" onAction="#btnBorrowBooksOnAction" text="Borrow Books">
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#btnReturnBooksOnAction" text="Return Books">
                <font>
                   <Font name="Poppins SemiBold" size="25.0" />
                </font>
             </JFXButton>
          </children>
       </HBox>
-      <GridPane layoutX="191.0" layoutY="506.0" prefHeight="201.0" prefWidth="779.0" style="-fx-background-color: #6c6c6c;">
+      <GridPane layoutX="191.0" layoutY="506.0" prefHeight="201.0" prefWidth="779.0" style="-fx-border-color: #000000; -fx-border-width: 3; -fx-background-color: #b5b5b3;">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -83,7 +75,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <GridPane layoutX="191.0" layoutY="245.0" prefHeight="201.0" prefWidth="779.0" style="-fx-background-color: #6c6c6c;">
+      <GridPane layoutX="191.0" layoutY="245.0" prefHeight="201.0" prefWidth="779.0" style="-fx-border-color: #000000; -fx-border-width: 3; -fx-background-color: #b5b5b3;">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

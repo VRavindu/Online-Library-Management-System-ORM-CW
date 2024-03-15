@@ -87,7 +87,7 @@ public class BorrowBooksFormController {
 
     OrderService orderService = (OrderService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.ORDER);
     PlaceOrderService placeOrderService = (PlaceOrderService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceTypes.PLACE_ORDER);
-    long userId;
+    static long userId;
 
     public void initialize(){
         loadIdsAndTitles();
